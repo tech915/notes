@@ -1,0 +1,42 @@
+A] clear;
+clc;
+clear;
+close;
+s=poly(0,'s')
+N=(s+1)*(s+3);
+D=(s+2)*(s+4);
+F=N/D;
+disp(F,'Given Transfer Function:');
+zero=roots(N);
+pole=roots(D);
+disp(zero,'Zeros of transfer function:');
+disp(pole,'Poles of transfer function:');
+plzr(F)
+
+B] clear;
+clc;
+clear;
+close;
+s=poly(0,'s');
+l=3*s/(s+2)/(s+4)
+disp(l,'Given Transfer Function:');
+zero=roots(3*s);
+pole=roots((s+2)*(s+4));
+disp(zero,'Zeros of transfer function:');
+disp(pole,'Poles of transfer function:');
+plzr(l)
+
+C] clear;
+clc;
+clear;
+close;
+s=poly(0,'s')
+F=10*s/(s^2+2*s+2);
+disp(F,'Given Transfer Function:');
+zero=roots(10*s);
+pole=roots(s^2+2*s+2);
+disp(zero,'Zeros of transfer function:');
+disp(pole,'Poles of transfer function:');
+plzr(F)
+
+
