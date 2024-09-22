@@ -1,0 +1,38 @@
+A]
+clear;
+//Find the inverse Z-transform using long divison method
+clc;
+clear;
+z=poly(0,'z')
+x=ldiv(z^3-10*z^2-4*z+4,2*z^2-2*z-4,4);
+disp(x,'x[n]=');
+
+B]
+clear
+//Find the inverse Z-transform
+clc;
+clear;
+z=poly(0,'z');
+x=ldiv((z+1),(z-1/3),4);
+disp(x,'x[n]=');
+
+C]
+clear;
+//Inverse Z-transform using long division method
+clc;
+clear;
+z=poly(0,'z');
+x=ldiv(z,(z-0.5),4);
+disp(x,'x[n]=');
+
+D]clear
+//To find input x(n)
+//X(z)=1/(2*z^(-2)+2*z^(-1)+1);
+clear;
+clc;
+close;
+z=%z;
+a=(2+2*z+z^2);
+b=z^2;
+h=ldiv(b,a,6);
+disp(h,"First six values of h(n)=")
